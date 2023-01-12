@@ -1,0 +1,64 @@
+{
+  "name": "@blockly/plugin-modal",
+  "version": "4.0.5",
+  "description": "A Blockly plugin that creates a modal.",
+  "scripts": {
+    "audit:fix": "blockly-scripts auditFix",
+    "build": "blockly-scripts build",
+    "clean": "blockly-scripts clean",
+    "lint": "blockly-scripts lint",
+    "predeploy": "blockly-scripts predeploy",
+    "prepublishOnly": "npm run clean && npm run build",
+    "start": "blockly-scripts start",
+    "test": "blockly-scripts test"
+  },
+  "main": "./dist/index.js",
+  "module": "./src/index.js",
+  "unpkg": "./dist/index.js",
+  "author": "Blockly Team",
+  "keywords": [
+    "blockly",
+    "blockly-plugin",
+    "modal"
+  ],
+  "homepage": "https://github.com/google/blockly-samples/tree/master/plugins/modal#readme",
+  "bugs": {
+    "url": "https://github.com/google/blockly-samples/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/google/blockly-samples.git",
+    "directory": "plugins/modal"
+  },
+  "license": "Apache 2.0",
+  "directories": {
+    "dist": "dist",
+    "src": "src"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "devDependencies": {
+    "@blockly/dev-scripts": "^1.2.28",
+    "@blockly/dev-tools": "^5.0.4",
+    "blockly": "^9.0.0",
+    "jsdom": "^19.0.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "^10.1.0",
+    "sinon": "7.5.0"
+  },
+  "peerDependencies": {
+    "blockly": "^9.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://wombat-dressing-room.appspot.com"
+  },
+  "eslintConfig": {
+    "extends": "@blockly/eslint-config"
+  },
+  "engines": {
+    "node": ">=8.17.0"
+  }
+}

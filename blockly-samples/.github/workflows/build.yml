@@ -1,0 +1,50 @@
+# This workflow will lint, build and test Blockly samples.
+
+name: Build and Test
+
+on: [pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x]
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Use latest npm
+      run: npm install -g npm@latest
+
+    - name: Npm Install
+      run: npm install
+
+    - name: Build
+      run: npm run build -- -- -- --skip-lint
+
+    - name: Test
+      run: npm run test -- -- -- --skip-lint
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js 16.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 16.x
+
+    - name: Npm Install
+      run: npm install
+
+    - name: Lint
+      run: npm run lint

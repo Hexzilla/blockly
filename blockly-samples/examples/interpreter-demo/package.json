@@ -1,0 +1,41 @@
+{
+  "name": "blockly-interpreter-demo",
+  "version": "0.0.0",
+  "private": true,
+  "blocklyDemoConfig": {
+    "title": "JS Interpreter",
+    "files": [
+      "index.html",
+      "async-execution.html",
+      "backwards.html",
+      "step-execution.html",
+      "acorn_interpreter.js",
+      "acorn.js",
+      "interpreter.js",
+      "serialize.js",
+      "diff_match_patch.js",
+      "toolbox.js",
+      "wait_block.js",
+      "./node_modules/blockly/*_compressed.js",
+      "./node_modules/blockly/*_compressed.js.map",
+      "./node_modules/blockly/msg/en.js"
+    ],
+    "pages": [
+      {
+        "label": "Step Execution",
+        "link": "step-execution.html"
+      },
+      {
+        "label": "Async Execution",
+        "link": "async-execution.html"
+      },
+      {
+        "label": "Backwards Execution",
+        "link": "backwards.html"
+      }
+    ]
+  },
+  "dependencies": {
+    "blockly": "^9.0.0"
+  }
+}
