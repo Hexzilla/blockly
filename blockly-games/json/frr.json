@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"Games.puzzle": "Puzzle",
+	"Games.help": "Halep",
+	"Puzzle.legsChoose": "Schük ütj ...",
+	"Puzzle.error0": "Klaar! Aal a %1 baustianer san rocht.",
+	"Puzzle.error1": "Binai! Ian baustian as ferkiard.",
+	"Puzzle.error2": "%1 baustianer san ferkiard.",
+	"Puzzle.tryAgain": "Di kääntiakent baustian as ferkiard. Ferschük det noch ans.",
+	"Puzzle.checkAnswers": "Oonswaaren efterluke",
+	"Puzzle.helpText": "Hinge för arke lun (green) sin flag bi, schük det spriak ütj an maage en staapel mä stääden."
+}
